@@ -7,6 +7,7 @@ function LogoDc (props) {
       height={900.141}
       viewBox='0 0 900.14 900.141'
       {...props}
+      className='logo'
     >
       <path
         fill='#0376F2'

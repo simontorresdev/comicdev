@@ -1,0 +1,22 @@
+.containerDescription{
+  & h1{
+    position: relative;
+    display: inline-block;
+    color: var(--color-titulo);
+    transition: all ease .3s;
+    &::after{
+      content: '';
+      width: 30%;
+      height: 3px;
+      background: var(--color-main);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: all ease .3s;
+    }
+  }
+  & p{
+    color: var(--color-texto);
+    transition: all ease .3s;
+  }
+}
