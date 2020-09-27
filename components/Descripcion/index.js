@@ -6,7 +6,7 @@ const description = '[[A man with a beret and a woman are standing on a boardwal
 export const Descripcion = () => {
   return (
     <div className='containerDescription'>
-      <h1>Woodpecker</h1>
+      <h1>Woodpeckera</h1>
       <div className='containerInformation'>
         <p><span><b>Número:</b></span> 686</p>
         <p><span><b>Fecha:</b></span> 24-07-2020</p>
