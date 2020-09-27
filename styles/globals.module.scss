@@ -4,6 +4,7 @@ body{
   --color-main: #8a0000;
   --color-titulo: #000;
   --color-texto: rgba(0,0,0, .6);
+  --color-texto-boton: #fff;
 
 }
 body.dark{
@@ -12,6 +13,7 @@ body.dark{
   --color-main:  #f7d703;
   --color-titulo: #fff;
   --color-texto: rgba(255,255,255, .5);
+  --color-texto-boton: #000;
 }
 html,
 body {
