@@ -11,15 +11,13 @@
     display: flex;
     justify-content: center;
     & img{
+      max-width: 85%;
       max-height: 500px;
       object-fit: contain;
     }
   }
   & > .col2 {
-    & .react-tabs__tab-list{
-      padding: 0;
-    }
-    & .react-tabs__tab{
+    & .boton{
       display: inline-block;
       list-style: none;
       padding: 8px 32px;
@@ -35,14 +33,41 @@
         color: var(--color-main);
       }
     }
-    & .react-tabs__tab--selected{
-      display: none;
-    }
   }
   @media (max-width: 1140px) {
     flex-direction: column;
     & > .col{
       width: 100%;
     }
+  }
+}
+
+.containerDescription{
+  & h1{
+    position: relative;
+    display: inline-block;
+    color: var(--color-titulo);
+    transition: all ease .3s;
+    &::after{
+      content: '';
+      width: 30%;
+      height: 3px;
+      background: var(--color-main);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: all ease .3s;
+    }
+  }
+  & .containerInformation{
+    display: flex;
+    & p{
+      width: 50%;
+      margin: 10px 0;
+    }
+  }
+  & p{
+    color: var(--color-texto);
+    transition: all ease .3s;
   }
 }
