@@ -28,9 +28,21 @@
       color: var(--color-texto-boton);
       cursor: pointer;
       margin-top: 10px;
+      border: 2px solid var(--color-main);
+      transition: all ease .3s;
+      &:hover{
+        background: transparent;
+        color: var(--color-main);
+      }
     }
     & .react-tabs__tab--selected{
       display: none;
+    }
+  }
+  @media (max-width: 1140px) {
+    flex-direction: column;
+    & > .col{
+      width: 100%;
     }
   }
 }
