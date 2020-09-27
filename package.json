@@ -13,6 +13,6 @@
     "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-tabs": "^3.1.1"
+    "stars-rating": "^1.1.0"
   }
 }

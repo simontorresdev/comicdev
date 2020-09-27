@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { SingleComic } from '../SingleComic'
 import { Cargando } from '../Cargando'
+import { Error } from '../Error'
 
 export const Comic = () => {
+  // DEFINIMOS EL ESTADO COMIC
   const [comic, setComic] = useState([])
+  const [error, setError] = useState(false)
+
+  // LUEGO DE RENDERIZAR EL COMPONENTE INVOCAMOS UNA FUNCIÓN QUE ACTUALIZARA EL ESTADO LUEGO DE OBTENER LOS DATOS DE LA API
 
   useEffect(() => {
     obtenerComic()
   }, [])
+
+  // FUNCION PARA ACTUALIZAR EL ESTADO LUEGO DE CONSUMIR LA API
 
   const obtenerComic = async () => {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com'
@@ -24,6 +31,7 @@ export const Comic = () => {
         const data = await req.json()
         setComic(data)
       } catch (e) {
+        setError(true)
       }
     }
 
@@ -36,7 +44,7 @@ export const Comic = () => {
 
   return (
     <>
-      {comic.title ? <SingleComic {...comic} /> : <Cargando />}
+      {comic.title ? <SingleComic {...comic} /> : (error) ? <Error /> : <Cargando />}
     </>
   )
 }

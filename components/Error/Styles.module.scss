@@ -1,0 +1,27 @@
+.containerError{
+  padding: 30px 0 80px 0;
+  min-height: calc(100vh - 116px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2{
+    font-size: 30px;
+    color: var(--color-titulo);
+  }
+  img{
+    &.errorFlash{
+      width: 250px;
+      body.dark & {
+        display: none;
+      }
+    }
+    &.errorBatman{
+      display: none;
+      width: 300px;
+      body.dark & {
+        display: block;
+      }
+    }
+  }
+}

@@ -46,3 +46,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.boton{
+  font-family: 'Anton', sans-serif;
+  display: inline-block;
+  list-style: none;
+  padding: 8px 32px;
+  border-radius: 100px;
+  background-color: var(--color-main);
+  color: var(--color-texto-boton);
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid var(--color-main);
+  transition: all ease .3s;
+  margin: 0;
+  &:hover{
+    background: transparent;
+    color: var(--color-main);
+  }
+}
