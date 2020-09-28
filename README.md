@@ -4,6 +4,7 @@ Primero, instale las dependencias necesarias:
 
 ```bash
 npm install
+```
 
 Luego, ejecute el servidor de desarrollo:
 
