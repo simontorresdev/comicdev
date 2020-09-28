@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Como iniciarla
 
-## Getting Started
-
-First, run the development server:
+Primero, ejecute el servidor de desarrollo:
 
 ```bash
 npm run dev
@@ -10,21 +8,16 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir en [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Elaboración de la página
 
-## Learn More
+Comicdev esta desarrollada con el Next JS, React y SASS. Al ser una página que consume comics de https://xkcd.com/ decidí jugar un poco con el diseño de la web, haciendo una temática de DC comics, cree un tema claro y un tema oscuro, como la temática es de comics, decidí llamarlos modo Flash y modo Batman respectivamente, además, el tema se guarda en localStorage para que este siga siendo el mismo al recargar la web. 
 
-To learn more about Next.js, take a look at the following resources:
+La página consume los datos de https://xkcd.com/ como comentaba, cree componentes para la pantalla de "cargando", pantalla de "Ha ocurrido un error" y pantalla para ver los datos del comic correctamente. Espero les guste.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Adicionalmente tambien desplegue Comicdev en https://comicdev.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
