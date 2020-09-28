@@ -1,6 +1,11 @@
 ## Como iniciarla
 
-Primero, ejecute el servidor de desarrollo:
+Primero, instale las dependencias necesarias: 
+
+```bash
+npm install
+
+Luego, ejecute el servidor de desarrollo:
 
 ```bash
 npm run dev
