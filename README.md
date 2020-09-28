@@ -18,6 +18,8 @@ La página consume los datos de https://xkcd.com/ como comentaba, cree component
 
 Adicionalmente tambien desplegue Comicdev en https://comicdev.vercel.app/
 
+Página elaborada por https://simontorres.dev/
+
 
 
 
